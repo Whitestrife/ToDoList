@@ -1,11 +1,9 @@
-var FadeOut = false;
-
 $("ul").on("click", "span", function(event){
     $(this).parent().fadeOut(500,function(){
         $(this).remove();
     });
     event.stopPropagation();
-})
+});
 
 $("span:first").on("click", function(event){
         $("input").fadeToggle();
